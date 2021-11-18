@@ -1,11 +1,20 @@
 * {color: rgb(0, 110, 255);}
-
+a {
+    width: 500px;
+}
 #inicio {color: rgba(179, 14, 14, 0.561);}
 .subtituloinicio{color: tomato;}
 nav .subinicio {text-decoration-color: crimson;}
 
-
-
+.botonera a {
+    color: rgb(50, 205, 50);
+}
+.botonera .b {
+    color: rgb(250, 205, 50);
+}
+.botonera li>a#c.d {
+    color: rgb(250, 25, 250);
+}
 #kungfu{color: rgb(50, 205, 50);}
 
 
