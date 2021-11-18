@@ -1,33 +1,33 @@
 * {color: rgb(0, 110, 255);}
 
-#inicio {color: rgba(179, 14, 14, 0.561);}
-.subtituloinicio{color: tomato;}
-nav .subinicio {text-decoration-color: crimson;}
+#inicio {color: crimson;}
+.subtituloinicio{color: crimson;}
+li.subinicio , a.subinicio{color: crimson;}
 
 
 
-#kungfu{color: rgb(50, 205, 50);}
+#kungfu{color: rgb(21, 214, 150);}
+a.kungfu , li.kungfu{color: rgb(21, 214, 150);}
 
 
 
-
-
-#taekwondo{color: black;}
-
+#taekwondo{color: darkslategrey;}
+li.taekwondo , a.taekwondo{color: darkslategrey;}
 
 
 
-#karate{color: rgb(100, 66, 163);}
-
+#karate{color: deeppink;}
+li.karate , a.karate{color: deeppink;}
 
 
 
 #boxeo {color: darkcyan;}
-
+li.boxeo , a.boxeo {color: darkcyan;}
 
 
 
 #muaytai{color: darkorange;}
+li.muaytai , a.muaytai{color: darkorange;}
 
 
 
