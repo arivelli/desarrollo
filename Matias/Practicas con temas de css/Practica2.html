@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html> 
+    <head>
+        <title>Practicas</title>
+        <link rel="stylesheet" type="text/css" href="Practica2.css">
+        <link rel="icon" href="goku.ico">
+        
+
+    </head> 
+    <body>
+    <article>
+        <h1>Practica 2</h1> 
+        <ul>
+            <li>Especificidad</li>
+            <li>Metodologia BEN</li>
+            <li>Unidades La teoria de las medidas</li>
+        </ul>
+        <section class="especificidad">
+            <p>La especificidad conciste en darle prioridad 
+                a ciertos elementos, es decir cambiar las propiedades 
+                de determinado elemento o elementos si afectar al 
+                resto. Es todo cuestion de prioridades y jerarquias. 
+                Los rangos de gerarquias del mas importante al menos 
+                importante son los siguientes:
+                <ol>
+                    <li>!Important</li>
+                    <li>Estilos en linea</li>
+                    <li>Identificadores</li>
+                    <li>Clases</li>
+                    <li>Pseudo-clases</li>
+                    <li>Atributos</li>
+                    <li>Elementos</li>
+                    <li>Pseudo-elementos</li>
+                </ol>  
+            </p>     
+        </section>   
+        <section class="BEN">
+            <p>La metodologia BEN consciste en evitar 
+                los conflictos al seleccionar muchas clases 
+                diferentes de una forma en la que podamos conocer 
+                y darnos cuenta de que elemento estamos seleccionando
+                a partir de las clases. es decir nos basamos en el 
+                nombre de la clase para saber que elemento estamos
+                seleccionando. Primer ejemplo donde a todos los input 
+                les cambiaremos el fondo y el borde. Asignandole 
+                la siguiente clase --> BEN__input  
+                <input type="text"  class="BEN__input">
+                <input type="text"  class="BEN__input">
+                <input type="text"  class="BEN__input">
+                <input type="text"  class="BEN__input">
+                Segundo ejemplo uno de los input el tercero tendra un cambio 
+                diferente y lo asignaremos especificando la clase antes 
+                mencionada de la siguiente manera --> BEN__input--nombre
+                <input type="text"  class="BEN__input">
+                <input type="text"  class="BEN__input">
+                <input type="text"  class="BEN__input--nombre">
+                <input type="text"  class="BEN__input">
+             </p>
+        </section>
+        <section class="unidades">
+            <p>En CSS existen dos tipos de unidades diferentes 
+            <ol>
+                <li>Especificas <p>cm mm mts px etc</p></li>
+                <li>Relativas<p>em y vh </p></li>
+            </ol> Estas unidades se utilizan para 
+            asignarle un tamañoa cada uno de los elementos 
+            </p>
+        </section>
+    </article>
+    <aside>
+
+    </aside>
+    <footer>
+        <ul>
+            <li>Youtube</li>
+            <li>Facebook</li>
+            <li>Instagram</li>
+        </ul>
+
+    </footer>
+    </body>
+</html>
