@@ -19,9 +19,9 @@ if(isset($_SESSION['User'])!="LeMatt"){
 <body>
 
 <div class="container">
-<strong><a href="index.php">START </a></strong>()
-<strong><a href="gallery.php">GALLERY </a></strong>()
-<strong><a href="close.php">CLOSE </a></strong> 
+<strong><a href="index.php">START</a></strong>()
+<strong><a href="gallery.php">GALLERY</a></strong>()
+<strong><a href="close.php">CLOSE</a></strong> 
 
 
 
