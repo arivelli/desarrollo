@@ -1,16 +1,15 @@
 <?php include("headboard.php");?>
 <?php include("connection.php");?>
 </br>
-</br>
+
 <?php
 
 if($_POST){
-  print_r($_POST);
+
   $name= $_POST['NAME'];
   $description= $_POST['description'];
 
-  $date= new dateTime();
-
+  $date= new dateTime(); //agregamos el tiempo para que cada imagen sea unica
   $image=$date->getTimestamp()."_".$_FILES['FILE']['name'];      
 
   $temporary_image=$_FILES['FILE']['tmp_name'];
@@ -20,15 +19,18 @@ if($_POST){
   $objConnection= new connection();
   $sql="INSERT INTO `projects` (`id`, `name`, `image`, `description`) VALUES (NULL,'$name', '$image', '$description');";
   $objConnection->run($sql); 
+  header("location:gallery.php");
 }
-if($_GET){
-
-    //"DELETE FROM `projects` WHERE `projects`.`id` = 15
-
+if($_GET){ 
     $id=$_GET['delete'];
     $objConnection= new connection();
+
+    $image=$objConnection->consult("SELECT image FROM `projects` where id=".$id);
+    unlink("images/".$image[0]['image']);
+
     $sql="DELETE FROM `projects` WHERE `projects`.`id` =".$id;
     $objConnection->run($sql);
+    header("location:gallery.php");
 }
 
 $objConnection= new connection();
@@ -38,7 +40,6 @@ $projects=$objConnection->consult("SELECT * FROM `projects`");
 
 ?>
 
-<br/>
 <br/>
 <br/>
 
@@ -53,15 +54,15 @@ $projects=$objConnection->consult("SELECT * FROM `projects`");
     <form action="gallery.php" method="post" enctype="multipart/form-data"> 
 
         
-         Name the project: <input class="form-control" type="text" name="NAME" id="">
+         Name the project: <input required class="form-control" type="text" name="NAME" id="">
          <br/>
          <br/>
-         Image of the project : <input class="form-control" type="file" name="FILE" id="">
+         Image of the project : <input required class="form-control" type="file" name="FILE" id="">
          <br/>
          <br/>
          Description:
         
-           <textarea class="form-control" name="description" id="" rows="3"></textarea>
+           <textarea required class="form-control" name="description" id="" rows="3"></textarea>
            <br/>
          
          <input class= "btn btn-success" type="submit" value="Send project">
@@ -73,7 +74,7 @@ $projects=$objConnection->consult("SELECT * FROM `projects`");
 </div>
             
         </div>
-        <div class="col-md-6">
+        <div class="col-md-3">
         <table class="table">
     <thead>
         <tr>
@@ -89,7 +90,10 @@ $projects=$objConnection->consult("SELECT * FROM `projects`");
         <tr>
             <td><?php echo $project['id'];?></td>
             <td><?php echo $project['name'];?></td>
-            <td><?php echo $project['image'];?></td>
+            <td>
+                <img width="100" src="images/<?php echo $project['image'];?>" alt="" srcset="">
+                
+            </td>
             <td><?php echo $project['description'];?></td>
             <td><a  class="btn btn-danger" href="?delete=<?php echo  $project['id']; ?>">Delete</a></td>
         </tr>
