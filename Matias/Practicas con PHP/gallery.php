@@ -79,7 +79,7 @@ $projects=$objConnection->consult("SELECT * FROM `projects`");
     <thead>
         <tr>
             <th>ID</th>
-            <th>NAME</th>
+            <th>NAME NAME</th>
             <th>IMAGE</th>
             <th>DESCRICRIPTION</th>
             <th>ACTIONS</th>
