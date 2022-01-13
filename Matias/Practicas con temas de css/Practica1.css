@@ -1,0 +1,16 @@
+* {color: #efefef;}
+
+body  {background-color: grey;}
+button,li {color: rgb(11, 12, 11);}
+
+p {background-color: rgb(11, 12, 11);}
+
+.ejclases{background-color: deepskyblue;}
+
+#ejID{background-color: rgb(123, 218, 34);}
+
+[ejpor=atributo] {background-color: indianred;}
+
+p input {background-color: rgb(105, 250, 255); color: blue ;}
+
+p:hover{zoom: 1.33;}

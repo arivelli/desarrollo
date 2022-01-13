@@ -1,0 +1,116 @@
+* {color: rgb(0, 110, 255);}
+body {background-color:black;  }
+nav {background-color: white;  padding-top: 5px; padding-bottom: 10px;
+     text-align: center;}
+article {background-color: #efefef; padding-top: 50px; padding-bottom: 5px;
+     margin-top: 100px; margin-bottom: -100px; }
+    section {background-color: purple; 
+        border-radius: 50%; border-style: solid ; border-width: 15px; 
+        border-bottom-color: rgb(0, 110, 255); border-top-color: seagreen ; 
+        border-left-color: rgb(240, 216, 1); border-right-color: tomato;
+        margin: 80px; margin-left: 40px; margin-right: 40px; padding: 25px; 
+        text-align: center; }
+aside {background-color: aquamarine; margin-top: 150px; }      
+footer {background-color: white; margin-top: 200px; text-align: center; }
+
+
+#inicio {color: crimson; cursor: pointer;
+     background-color: rgb(20, 219, 245);
+      border-top-right-radius: 50%; border-bottom-left-radius: 50%;
+      text-align: center; 
+      text-shadow: tomato; text-shadow: black  ; text-shadow: 23px 7px 5px #0d0d0e;
+      font-size: 50px;
+      margin: 10px; 
+      padding: 20px;  
+      border-style: solid ; border-color: black; border-width: 5px;}
+      #inicio:hover {color: black; background-color: cornsilk;}
+    
+
+.subtituloinicio{color: rgb(20, 220, 70); font-size: 30px ; font-family: Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration-line: underline; text-shadow: 20px 25px 5px rgb(15, 15, 15); }
+li.subinicio , a.subinicio{color: crimson; display: inline ; 
+    margin-inline: 5px; padding: 5px; }
+a.subinicio {border-style: solid; border-color: black; border-radius: 50%;}    
+li.subinicio:hover {color: black; }
+a.subinicio:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+
+#kungfu{color:green; cursor: pointer;
+    background-color: rgb(20, 219, 245);
+     border-radius: 60%; 
+     text-align: center; 
+     margin: 10px; 
+     padding: 20px;  
+     border-style: solid ; border-color: black; border-width: 5px;}
+     #kungfu:hover {color: black; background-color: cornsilk;}
+a.kungfu , li.kungfu{color: green; display: inline ; 
+    margin-inline: 5px; padding: 5px}
+a.kungfu {border-style: solid; border-color: black; border-radius: 50%;}    
+section.kungfu {background-color: yellow;}
+li.kungfu:hover {color: black; }
+a.kungfu:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+
+#taekwondo{color: darkslategrey; cursor: pointer;
+    background-color: rgb(20, 219, 245);
+     border-radius: 60%; 
+     text-align: center; 
+     margin: 10px; 
+     padding: 20px;  
+     border-style: solid ; border-color: black; border-width: 5px;}
+     #taekwondo:hover {color: black; background-color: cornsilk;}
+li.taekwondo , a.taekwondo{color: darkslategrey; display: inline ; 
+    margin-inline: 5px; padding: 5px}
+a.taekwondo {border-style: solid; border-color: black; border-radius: 50%;}
+li.taekwondo:hover {color: black; }
+a.taekwondo:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+#karate{color: deeppink; cursor: pointer;
+    background-color: rgb(20, 219, 245);
+     border-radius: 60%; 
+     text-align: center; 
+     margin: 10px; 
+     padding: 20px;  
+     border-style: solid ; border-color: black; border-width: 5px;}
+     #karate:hover {color: black; background-color: cornsilk;}
+li.karate , a.karate{color: deeppink; display: inline ; 
+    margin-inline: 5px; padding: 5px}
+a.karate {border-style: solid; border-color: black; border-radius: 50%;}
+li.karate:hover {color: black; }
+a.karate:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+#boxeo {color: darkcyan; cursor: pointer;
+    background-color: rgb(20, 219, 245);
+     border-radius: 60%; 
+     text-align: center; 
+     margin: 10px; 
+     padding: 20px;  
+     border-style: solid ; border-color: black; border-width: 5px;}
+     #boxeo:hover {color: black; background-color: cornsilk; }
+li.boxeo , a.boxeo {color: darkcyan; display: inline ; 
+    margin-inline: 5px; padding: 5px}
+a.boxeo {border-style: solid; border-color: black; border-radius: 50%;}
+li.boxeo:hover {color: black; }
+a.boxeo:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+#muaytai{color: darkorange; cursor: pointer;
+    background-color: rgb(20, 219, 245);
+     border-radius: 60%; 
+     text-align: center; 
+     margin: 10px; 
+     padding: 20px;  
+     border-style: solid ; border-color: black; border-width: 5px;}
+     #muaytai:hover {color: black; background-color: cornsilk; }
+li.muaytai , a.muaytai{color: darkorange; display: inline ; 
+    margin-inline: 5px; padding: 5px}
+a.muaytai {border-style: solid; border-color: black; border-radius: 50%;}
+li.muaytai:hover {color: black; }
+a.muaytai:hover {color: black; background-color: rgb(15, 231, 247); }
+
+
+

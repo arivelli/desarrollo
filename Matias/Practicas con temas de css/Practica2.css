@@ -1,0 +1,11 @@
+body {background-color: #efefef;}
+
+article {background-color: #0e0d0d; color: #ffffff;}
+
+.especificidad{background-color: #b22222; color: violet; }
+
+.BEN{background-color: aqua; color: black; }
+.BEN__input{background-color: cornflowerblue; border-width: 5px; }
+.BEN__input--nombre {background-color: crimson;}
+
+.unidades {background-color: #228b22 ; color: tomato;}

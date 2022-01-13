@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practicas</title>
+    <link rel="stylesheet" type="text/css" href="Practica3.css">
+    <link rel="icon" href="goku.ico">
+    
+</head>
+<body>
+    <h1>Practicas 3</h1>
+    <article>
+        <section>
+            <h2>Propiedades de texto</h2>
+            <ul>
+                <li class="fontsize">font-size --> Tamaño de la letra</li>
+                <li class="fontfamily">font-family --> Tipografia de la letra</li>
+                <li class="lineheigth">line-heigth --> El espacio que ocupa el texto en altura </li>
+                <li class="fontweigth">font-weigth --> El grosor de la letra</li>
+                <li class="fontstretch">font-stretch --> La fuerza de la letra</li>
+            </ul>
+        </section>
+        <section>
+            <h2>Tipografias externas</h2>
+            <p>Importar tipografias externas . por ejemplo de fontgoogle
+                y la incluimos. Ademas ponemos el nombre de un tipografia 
+                agregamos una coma y ponemos otra. con el objeto de que si el 
+                navegador no toma la primera pueda tomar la que sigue. 
+            </p>
+        </section>
+        <section>
+            <h2>Normalize</h2>
+            <p>
+                Consciste en en reinciar los estilos por
+                 defecto en los navegadores
+            </p>
+        </section>
+        <section class="teoriadecajas">
+            <h2>Teoria de cajas</h2>
+            <ul>
+                <li>En linea 
+                    <p>(El ancho depende del contenido del elemento). En este tipo
+                    de cajas las propiedades heigth y wigth no funcionan.</p> 
+                </li>
+                <li>
+                    <p>bloque (El ancho ocupa todo el ancho del elemento padre
+                    Ej. Un h1 y un h2 son elementos en bloque ya que ocupan todo
+                     el ancho de su elemento padre</p> 
+                </li>
+               
+            </ul>
+            <p>Estos comportamientos pueden revertirse con la propiedad DISPLAY.
+                 Para seguir avanzando es necesario determinar que es el box 
+                 model y consciste en el modelo en el cual trabajamos las cajas 
+                 y esta compuesto de cuatro propiedades content padding border margin
+                 y tienen un rango de jerarquias, es decir que uno se aplica por sobre
+                 el otro.
+                Algunas de las propiedades de cajas son las siguientes:
+            </p>
+            <ul>
+                <li>Padding</li>
+                <p class="ppadding">Consciste en la distacia que hay entre el 
+                    contenido de la caja y los bordes de la misma
+                Por lo tanto podemos decir que tenemos 
+                <button class="paddingbutton">padding top (superior)</button> 
+                <button class="paddingbutton">padding rigth (derecho)</button> 
+                <button class="paddingbutton"> padding botton (inferior)</button> 
+                <button class="paddingbutton">padding left (izquierdo)</button> 
+                </p>
+                <li>Margin</li>
+                <p class="pmargin">Consciste en la distancia que hay 
+                entre las cajas. Con un margin de cero las cajas 
+                estarian pegadas una a la otra sin un espacio 
+                en medio de ellas.
+                <button  class="marginbutton__top" >margin top (superior)</button> 
+                <button  class="marginbutton__rigth" >margin rigth (derecho)</button> 
+                <button  class="marginbutton__bottom" > margin botton (inferior)</button> 
+                <button  class="marginbutton__left" >margin left (izquierdo)</button>
+                </p>
+                <li>Border-radius</li>
+                 <p>Esta propiedad consciste en redondear los 
+                bordes de la caja, se le puede asignar valores
+                en porcentaje y en em y otros. 
+                </p>
+                <li>Border</li>
+                <p> Esta propiedad permite darle un
+                borde a la caja determinando
+                tamaño, estilo y color en ese orden.
+                </p> 
+                <li>Box-shadow</li>
+                <p>
+                    Esta propiedad nos permite poder darle 
+                    sombra a la caja, y consta para ello de hasta
+                    5 valores diferente  rigth (cuanto hacia el costado 
+                    la deseo tener) button (cuanto hacia abajo le deseo 
+                    asignar de sombra) el desenfoque de la 
+                    sombra, el borde de la sombra y el color. Todo en ese 
+                    orden de prioridades.
+                </p>
+                <li>Text-shadow</li>
+                <p>Esta propiedd es similar a la propiedad 
+                    de sombra de la caja solo que se aplica al 
+                    texto contenido dentro de la caja, es decir 
+                    al content.   
+                </p>
+                <li>Transform</li>
+                <p>
+                    Esta propiedad consciste en modificar la  orientacion de la caja
+                </p>
+            </ul>
+        </section>
+        <section class="position">
+            <h2>Position</h2>
+            <p>Es una propiedad que me permite 
+                posisionar las cajas a mi gusto
+            para ello lo primero que debo hacer es darle valor
+        "relative" o "absolut"  o "Fixed" (el elemento queda fijo) o 
+        "Sticky" (se comporta como un fixed apartir 
+        del momento que le digamos) a la 
+        propiedad position y luego le puedo asignar propiedades 
+        <button class="buttonposition">top</button>     cuanto me alejo del borde superior
+        <button class="buttonposition">left</button>    cuanto me alejo del borde izquierdo
+        <button class="buttonposition">botton</button>  cuanto me alejo del borde inferior
+        <button class="buttonposition">rigth</button>   cuanto me alejo del borde derecho 
+        <p class="pbuttonposition"> Cabe destacar que respetan un orden de jerarquia estas propiedades 
+        top y left son la mas importantes en este caso. Tambien sucede que a agregar 
+        la propiedad de position con valor relative le estamos creando, habilitando una nueva 
+        propiedad que es la de "Z-indez" Es la forma en la que vamos a posisionar 
+        un elememnto por encima del otro y se recomienda dejar espacios de 100. Es decir
+        a la caja uno le das un Z-indez de 100 a la caja dos le das un Z-indez de 200 y sucesivamente 
+        con el resto de las cajas </p>
+    </p>
+        </section>
+        
+    </article>
+    <aside>
+        
+    </aside>
+    
+</body>
+</html>

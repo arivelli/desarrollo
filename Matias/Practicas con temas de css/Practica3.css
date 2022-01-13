@@ -1,0 +1,52 @@
+body {background-color: #efefef; overflow: auto;}
+article {width: 2000px; height: 5000px; background-color: #7e70bd;}
+section{width: 2000px; height: 300px;background-color: rgb(29, 228, 228);  }
+
+.fontsize {font-size: 1cm; }
+.fontfamily {font-family: monospace;}
+.lineheigth {line-height: 1cm;}
+.fontweigth {font-weight: 900;}
+.fontstretch {font-stretch: ultra-expanded;}
+
+
+
+.teoriadecajas { height: 1400px;}
+
+button {display: block; 
+    padding: 3px; 
+    margin: 2px;
+    border-radius: 50%; 
+    width: 7cm;
+    background-color: #40e0b8;  }
+
+h2 {width: 12cm; 
+    background-color: #d8bfd8; 
+    text-align: center; 
+    border-style: solid; 
+    margin-top: 1cm; 
+    position: relative; top: 2mm; }
+
+p {width: 500px; 
+background-color: hsl(175, 15%, 83%); 
+text-align: center; }
+
+.position {height: 600px;}
+
+.ppadding {height: 5cm; 
+    overflow: auto;}
+.paddingbutton { width: 5cm;
+     position: relative; left: 3cm; top: -1.2cm; 
+     margin-top: 2.5cm; margin-bottom: 1.5cm; 
+     transform: rotate(35deg); padding: 1cm; }
+
+.pmargin {height: 5cm; width: 20cm;}
+.marginbutton__top {position: relative; left: 12cm; }
+.marginbutton__rigth  {position: relative; top: 2.5cm; left: 12cm; }
+.marginbutton__bottom {position: relative; top: -1.5cm; }
+.marginbutton__left {position: relative; top: 1cm; }
+
+.buttonposition { position: relative; left: 3cm; bottom: 0.05cm; margin: 2mm; }
+
+.pbuttonposition {width: 220px; height: 100px; 
+    position: relative;  
+    top: -9cm; left: 14cm; overflow: auto;}

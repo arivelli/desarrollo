@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <title>PRACTICAS</title>
+        <link rel="icon" href="favicon.ico"/>
+        <link rel="stylesheet" type="text/css" href="Practica1.css">
+
+
+    </head>    
+        <body>
+            <h1>Practica 1</h1>
+            <h2>Selctores, las distintas formas de seleccionar un elemento</h2>
+            <p> Tengamos primero en cuenta que la estructura basica de CSS es la siguiente:
+                SELECTOR {PROPIEDAD: VALOR;}
+                Los tipos de selectores son los siguientes:
+                <ul>
+                    <li>Universal</li>
+                    <li>De tipo </li>
+                    <li>Clases</li>
+                    <li>ID</li>
+                    <li>Por atributo</li>
+                    <li>Desendiente</li>
+                    <li>Pseudo-clases</li>
+                </ul>
+            </p>
+        <article>
+            <section>
+                <p> * Este simple signo es el selector que 
+                selecciona a todos los elementos de html</p> 
+            </section>
+            <section>
+                <p>Los selcetores de tipo son los que 
+                seleccionamos directamente con el elemento, 
+                es decir en el lugar de nuestra formula donde dice 
+                SELECTOR ponemos el elemento en cuestion 
+                por ejemplo h1 o body o button etc. Debemos tener presente que podemos 
+                seleccionar varios elementos a la ves separandolos con una coma (,) </p>
+            </section>
+            <section>
+                <p class="ejclases"> Los selctores de clases concisten 
+                en asignarle un nombre al elemento que deseamos
+                moldear mediante el atributo "class", para ello priemro en html 
+                debemos insertar dentro del elemento que vamos
+                 a modificar lo siguiente class="nombre que queramos" 
+                 y luego en CSS llamamos a ese elemento 
+                 remmplazando en nuestra formula la palabra selector de 
+                 la siguiente manera .mismo nombre que hayamos elegido.</p>
+            </section>
+            <section>
+                <p id="ejID">Los selctores de ID concisten 
+                en asignarle un nombre al elemento que deseamos
+                moldear mediante el atributo "ID", para ello priemro en html 
+                debemos insertar dentro del elemento que vamos
+                 a modificar lo siguiente ID="nombre que queramos" 
+                 y luego en CSS llamamos a ese elemento 
+                 remmplazando en nuestra formula la palabra selector de 
+                 la siguiente manera #mismo nombre que hayamos elegido. 
+                 Tengamos presente que no debemos abusar del ID 
+                 ya que se utiliza para identificar un elemento UNICO. 
+                 Ojo con los ID en Javascript se aconseja 
+                 usar un solo ID por elemento</p>
+            </section>
+            <section>
+                <p ejpor="atributo"> Los selctores de por atributo  concisten 
+                en asignarle un nombre de atributo al elemento que deseamos
+                moldear mediante un nombre de atributo que nosotros inventemos, para ello priemro en html 
+                debemos insertar dentro del elemento que vamos
+                 a modificar lo siguiente "nombre que queramos darle al atributo"="nombre que queramos" 
+                 y luego en CSS llamamos a ese elemento 
+                 remmplazando en nuestra formula la palabra selector de 
+                 la siguiente manera 
+                 [nombre que le hayamos dado al atributo=mismo nombre que hayamos elegido].</p>
+            </section>
+            <section>
+                <p> Los selctores de desendientes concisten 
+                llamar a un elemento dentro de otro por ejemplo
+                a un input (elemento hijo que esta dentro del elemento padre) que 
+                se encuentra dentro de un p (elemento padre en esta ocasion ya 
+                que contiene al input elemento hijo) <input type="text" value="DESENDIENTE"> 
+                en CSS llamamos a ese elemento remmplazando en nuestra 
+                formula la palabra selector de la siguiente manera: 
+                elemento padre y elemento hijo ej: p input. Tambien se 
+                se puede hacer con elementos dentro de clases.</p>
+            </section>
+            <section> 
+                <p>Son otra forma de seleccionar que tenemos para comprenderlo debemos 
+                tener en cuenta que una psudo-clase se da cuando en un evento se genera una seleccion
+                ej: cuando pasamos con el cursor del mouse por encima de un 
+                elemento y este se modifica (a esta accion se la llama hover), para lograrlo en CSS debemos
+                reemplazar la palabra selector de la siguiente manera:
+                elemento que deseamos modificar: psedo-clase ej: p: hover. Tambien 
+                podemos conbinarlo con otro tipo de slectores para lograr una mayor especifidad.</p>
+            </section>
+        </article>
+        <aside>
+
+        </aside>
+        <footer>
+            <input type="text" value="Nombre completo">
+            <button>Unete</button>
+
+                
+        </footer>    
+        </body>
+
+</html>
